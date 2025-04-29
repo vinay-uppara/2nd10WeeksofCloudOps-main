@@ -4,7 +4,7 @@ provider "aws" {
 
  #Creating IAM role for EKS
   resource "aws_iam_role" "master" {
-    name = "Jumphost-iam-role1"
+    name = "ec2-admin"
 
     assume_role_policy = jsonencode({
       "Version": "2012-10-17",
